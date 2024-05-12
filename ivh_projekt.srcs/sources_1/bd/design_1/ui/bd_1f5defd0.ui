@@ -1,0 +1,183 @@
+{
+   "ActiveEmotionalView":"Color Coded",
+   "Color Coded_ExpandedHierarchyInLayout":"",
+   "Color Coded_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+#  -string -flagsOSRD
+preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace portBus row -pg 1 -lvl 8 -x 1700 -y 300 -defaultsOSRD
+preplace portBus col -pg 1 -lvl 8 -x 1700 -y 330 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 270 -y 370 -swap {1 0 2 3} -defaultsOSRD
+preplace inst display_0 -pg 1 -lvl 7 -x 1560 -y 320 -defaultsOSRD
+preplace inst cells_0 -pg 1 -lvl 6 -x 1300 -y 430 -defaultsOSRD
+preplace inst fsm_0 -pg 1 -lvl 4 -x 700 -y 420 -defaultsOSRD
+preplace inst bcd_counter_0 -pg 1 -lvl 3 -x 450 -y 430 -defaultsOSRD
+preplace inst image_source_0 -pg 1 -lvl 5 -x 1000 -y 60 -defaultsOSRD
+preplace inst nums_source_0 -pg 1 -lvl 5 -x 1000 -y 480 -defaultsOSRD
+preplace inst video_source_0 -pg 1 -lvl 5 -x 1000 -y 170 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 100 -y 420 -defaultsOSRD
+preplace inst game_of_life_source_0 -pg 1 -lvl 5 -x 1000 -y 300 -defaultsOSRD
+preplace netloc bcd_counter_0_Q 1 3 2 540 510 870
+preplace netloc cells_0_Q 1 6 1 1440 330n
+preplace netloc clk_in1_0_1 1 0 2 NJ 360 NJ
+preplace netloc clk_wiz_0_clk_out1 1 2 5 360 500 550 520 860 380 1130 310 N
+preplace netloc display_0_COL 1 7 1 NJ 330
+preplace netloc display_0_ROW 1 7 1 1680J 300n
+preplace netloc fsm_0_EN_GAME_OF_LIFE 1 4 1 880 320n
+preplace netloc fsm_0_EN_VIDEO 1 4 1 850 180n
+preplace netloc fsm_0_INVERT 1 4 2 NJ 410 N
+preplace netloc fsm_0_SEL 1 4 2 NJ 390 N
+preplace netloc game_of_life_source_0_Q 1 5 1 1120 300n
+preplace netloc image_source_0_Q 1 5 1 1160 60n
+preplace netloc nums_source_0_Q 1 5 1 1150 430n
+preplace netloc video_source_0_Q 1 5 1 1140 170n
+preplace netloc xlconstant_0_dout 1 1 2 180 440 NJ
+levelinfo -pg 1 0 100 270 450 700 1000 1300 1560 1700
+pagesize -pg 1 -db -bbox -sgen -90 0 1800 550
+",
+   "Color Coded_ScaleFactor":"1.18007",
+   "Color Coded_TopLeft":"-86,-114",
+   "Default View_ScaleFactor":"1.30524",
+   "Default View_TopLeft":"-86,-12",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port group_1 -pg 1 -lvl 7 -x 1480 -y 60 -defaultsOSRD
+preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 180 -swap {1 0 2 3} -defaultsOSRD -pinDir reset left -pinY reset 40L -pinDir clk_in1 left -pinY clk_in1 20L -pinDir clk_out1 right -pinY clk_out1 20R -pinDir locked right -pinY locked 40R
+preplace inst display_0 -pg 1 -lvl 6 -x 1340 -y 40 -defaultsOSRD -pinBusDir group_1 right -pinBusY group_1 20R -pinDir CLK left -pinY CLK 20L -pinBusDir DATA left -pinBusY DATA 80L
+preplace inst cells_0 -pg 1 -lvl 5 -x 1080 -y 100 -swap {3 1 4 0 2 5 6} -defaultsOSRD -pinBusDir group_1 left -pinBusY group_1 220L -pinDir CLK left -pinY CLK 40L -pinBusDir NUMS left -pinBusY NUMS 280L -pinBusDir IMGS left -pinBusY IMGS 20L -pinBusDir FRAME left -pinBusY FRAME 140L -pinBusDir GAME_OF_LIFE left -pinBusY GAME_OF_LIFE 400L -pinBusDir Q right -pinBusY Q 20R
+preplace inst fsm_0 -pg 1 -lvl 3 -x 530 -y 240 -swap {3 1 2 0 4} -defaultsOSRD -pinBusDir group_1 right -pinBusY group_1 80R -pinDir CLK left -pinY CLK 20L -pinBusDir CNT_100 left -pinBusY CNT_100 280L -pinDir EN_VIDEO right -pinY EN_VIDEO 20R -pinDir EN_GAME_OF_LIFE right -pinY EN_GAME_OF_LIFE 280R
+preplace inst bcd_counter_0 -pg 1 -lvl 2 -x 290 -y 240 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinDir RST left -pinY RST 80L -pinBusDir Q right -pinBusY Q 280R
+preplace inst image_source_0 -pg 1 -lvl 4 -x 820 -y 100 -defaultsOSRD -pinBusDir Q right -pinBusY Q 20R
+preplace inst nums_source_0 -pg 1 -lvl 4 -x 820 -y 360 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinBusDir BCD_IN left -pinBusY BCD_IN 40L -pinBusDir Q right -pinBusY Q 20R
+preplace inst video_source_0 -pg 1 -lvl 4 -x 820 -y 220 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinDir EN_PLAYBACK left -pinY EN_PLAYBACK 40L -pinBusDir Q right -pinBusY Q 20R
+preplace inst game_of_life_source_0 -pg 1 -lvl 4 -x 820 -y 480 -swap {0 2 1 3} -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinBusDir BCD_CNT left -pinBusY BCD_CNT 60L -pinDir EN_PLAYBACK left -pinY EN_PLAYBACK 40L -pinBusDir Q right -pinBusY Q 20R
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 300 -defaultsOSRD -pinBusDir dout right -pinBusY dout 20R
+preplace netloc netgroup_1 1 6 1 N 60
+preplace netloc netgroup_2 1 3 2 N 320 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 5 200 200 380 200 680 180 940 60 NJ
+preplace netloc clk_in1_0_1 1 0 1 NJ 200
+preplace netloc cells_0_Q 1 5 1 N 120
+preplace netloc bcd_counter_0_Q 1 2 2 380 580 700
+preplace netloc image_source_0_Q 1 4 1 NJ 120
+preplace netloc nums_source_0_Q 1 4 1 N 380
+preplace netloc video_source_0_Q 1 4 1 N 240
+preplace netloc fsm_0_EN_VIDEO 1 3 1 N 260
+preplace netloc game_of_life_source_0_Q 1 4 1 N 500
+preplace netloc fsm_0_EN_GAME_OF_LIFE 1 3 1 N 520
+preplace netloc xlconstant_0_dout 1 1 1 NJ 320
+levelinfo -pg 1 0 110 290 530 820 1080 1340 1480
+pagesize -pg 1 -db -bbox -sgen -90 0 1590 600
+",
+   "Grouping and No Loops_ScaleFactor":"1.26431",
+   "Grouping and No Loops_TopLeft":"-128,3",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus row -pg 1 -lvl 7 -x 1500 -y 60 -defaultsOSRD
+preplace portBus col -pg 1 -lvl 7 -x 1500 -y 90 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 140 -swap {1 0 2 3} -defaultsOSRD -pinDir reset left -pinY reset 40L -pinDir clk_in1 left -pinY clk_in1 20L -pinDir clk_out1 right -pinY clk_out1 20R -pinDir locked right -pinY locked 40R
+preplace inst display_0 -pg 1 -lvl 6 -x 1360 -y 40 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinBusDir DATA left -pinBusY DATA 80L -pinBusDir ROW right -pinBusY ROW 20R -pinBusDir COL right -pinBusY COL 50R
+preplace inst cells_0 -pg 1 -lvl 5 -x 1100 -y 100 -swap {3 2 0 1 6 4 5 7} -defaultsOSRD -pinDir CLK left -pinY CLK 260L -pinBusDir NUMS left -pinBusY NUMS 240L -pinBusDir IMGS left -pinBusY IMGS 20L -pinBusDir FRAME left -pinBusY FRAME 120L -pinBusDir GAME_OF_LIFE left -pinBusY GAME_OF_LIFE 420L -pinBusDir SEL left -pinBusY SEL 340L -pinDir INVERT left -pinY INVERT 360L -pinBusDir Q right -pinBusY Q 20R
+preplace inst fsm_0 -pg 1 -lvl 3 -x 550 -y 220 -swap {0 1 3 4 2 5} -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinBusDir CNT_100 left -pinBusY CNT_100 40L -pinBusDir SEL right -pinBusY SEL 220R -pinDir INVERT right -pinY INVERT 240R -pinDir EN_VIDEO right -pinY EN_VIDEO 20R -pinDir EN_GAME_OF_LIFE right -pinY EN_GAME_OF_LIFE 340R
+preplace inst bcd_counter_0 -pg 1 -lvl 2 -x 290 -y 200 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinDir RST left -pinY RST 80L -pinBusDir Q right -pinBusY Q 20R
+preplace inst image_source_0 -pg 1 -lvl 4 -x 840 -y 100 -defaultsOSRD -pinBusDir Q right -pinBusY Q 20R
+preplace inst nums_source_0 -pg 1 -lvl 4 -x 840 -y 320 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinBusDir BCD_IN left -pinBusY BCD_IN 40L -pinBusDir Q right -pinBusY Q 20R
+preplace inst video_source_0 -pg 1 -lvl 4 -x 840 -y 200 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinDir EN_PLAYBACK left -pinY EN_PLAYBACK 40L -pinBusDir Q right -pinBusY Q 20R
+preplace inst game_of_life_source_0 -pg 1 -lvl 4 -x 840 -y 500 -defaultsOSRD -pinDir CLK left -pinY CLK 20L -pinBusDir BCD_CNT left -pinBusY BCD_CNT 40L -pinDir EN_PLAYBACK left -pinY EN_PLAYBACK 60L -pinBusDir Q right -pinBusY Q 20R
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 260 -defaultsOSRD -pinBusDir dout right -pinBusY dout 20R
+preplace netloc display_0_ROW 1 6 1 NJ 60
+preplace netloc display_0_COL 1 6 1 NJ 90
+preplace netloc clk_wiz_0_clk_out1 1 1 5 200 160 380 160 720 420 960 60 N
+preplace netloc clk_in1_0_1 1 0 1 NJ 160
+preplace netloc cells_0_Q 1 5 1 N 120
+preplace netloc fsm_0_SEL 1 3 2 N 440 NJ
+preplace netloc fsm_0_INVERT 1 3 2 N 460 NJ
+preplace netloc bcd_counter_0_Q 1 2 2 400 180 700
+preplace netloc image_source_0_Q 1 4 1 N 120
+preplace netloc nums_source_0_Q 1 4 1 N 340
+preplace netloc video_source_0_Q 1 4 1 N 220
+preplace netloc fsm_0_EN_VIDEO 1 3 1 N 240
+preplace netloc game_of_life_source_0_Q 1 4 1 N 520
+preplace netloc fsm_0_EN_GAME_OF_LIFE 1 3 1 N 560
+preplace netloc xlconstant_0_dout 1 1 1 NJ 280
+levelinfo -pg 1 0 110 290 550 840 1100 1360 1500
+pagesize -pg 1 -db -bbox -sgen -90 0 1600 620
+",
+   "No Loops_ScaleFactor":"1.22313",
+   "No Loops_TopLeft":"-148,3",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus row -pg 1 -lvl 7 -x 1500 -y 60 -defaultsOSRD
+preplace portBus col -pg 1 -lvl 7 -x 1500 -y 90 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 140 -swap {1 0 2 3} -defaultsOSRD -pinY reset 40L -pinY clk_in1 20L -pinY clk_out1 20R -pinY locked 40R
+preplace inst display_0 -pg 1 -lvl 6 -x 1360 -y 40 -defaultsOSRD -pinY CLK 20L -pinBusY DATA 80L -pinBusY ROW 20R -pinBusY COL 50R
+preplace inst cells_0 -pg 1 -lvl 5 -x 1100 -y 100 -swap {3 2 0 1 6 4 5 7} -defaultsOSRD -pinY CLK 260L -pinBusY NUMS 240L -pinBusY IMGS 20L -pinBusY FRAME 120L -pinBusY GAME_OF_LIFE 420L -pinBusY SEL 340L -pinY INVERT 360L -pinBusY Q 20R
+preplace inst fsm_0 -pg 1 -lvl 3 -x 550 -y 220 -swap {0 1 3 4 2 5} -defaultsOSRD -pinY CLK 20L -pinBusY CNT_100 40L -pinBusY SEL 220R -pinY INVERT 240R -pinY EN_VIDEO 20R -pinY EN_GAME_OF_LIFE 340R
+preplace inst bcd_counter_0 -pg 1 -lvl 2 -x 290 -y 200 -defaultsOSRD -pinY CLK 20L -pinY RST 80L -pinBusY Q 20R
+preplace inst image_source_0 -pg 1 -lvl 4 -x 840 -y 100 -defaultsOSRD -pinBusY Q 20R
+preplace inst nums_source_0 -pg 1 -lvl 4 -x 840 -y 320 -defaultsOSRD -pinY CLK 20L -pinBusY BCD_IN 40L -pinBusY Q 20R
+preplace inst video_source_0 -pg 1 -lvl 4 -x 840 -y 200 -defaultsOSRD -pinY CLK 20L -pinY EN_PLAYBACK 40L -pinBusY Q 20R
+preplace inst game_of_life_source_0 -pg 1 -lvl 4 -x 840 -y 500 -defaultsOSRD -pinY CLK 20L -pinBusY BCD_CNT 40L -pinY EN_PLAYBACK 60L -pinBusY Q 20R
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 260 -defaultsOSRD -pinBusY dout 20R
+preplace netloc display_0_ROW 1 6 1 NJ 60
+preplace netloc display_0_COL 1 6 1 NJ 90
+preplace netloc clk_wiz_0_clk_out1 1 1 5 200 160 380 160 720 420 960 60 N
+preplace netloc clk_in1_0_1 1 0 1 NJ 160
+preplace netloc cells_0_Q 1 5 1 N 120
+preplace netloc fsm_0_SEL 1 3 2 N 440 NJ
+preplace netloc fsm_0_INVERT 1 3 2 N 460 NJ
+preplace netloc bcd_counter_0_Q 1 2 2 400 180 700
+preplace netloc image_source_0_Q 1 4 1 N 120
+preplace netloc nums_source_0_Q 1 4 1 N 340
+preplace netloc video_source_0_Q 1 4 1 N 220
+preplace netloc fsm_0_EN_VIDEO 1 3 1 N 240
+preplace netloc game_of_life_source_0_Q 1 4 1 N 520
+preplace netloc fsm_0_EN_GAME_OF_LIFE 1 3 1 N 560
+preplace netloc xlconstant_0_dout 1 1 1 NJ 280
+levelinfo -pg 1 0 110 290 550 840 1100 1360 1500
+pagesize -pg 1 -db -bbox -sgen -90 0 1600 620
+",
+   "Reduced Jogs_ScaleFactor":"1.22313",
+   "Reduced Jogs_TopLeft":"-148,3",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_sysclk -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace portBus row -pg 1 -lvl 7 -x 1510 -y 200 -defaultsOSRD
+preplace portBus col -pg 1 -lvl 7 -x 1510 -y 230 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 270 -defaultsOSRD
+preplace inst display_0 -pg 1 -lvl 6 -x 1370 -y 220 -defaultsOSRD
+preplace inst cells_0 -pg 1 -lvl 5 -x 1110 -y 330 -defaultsOSRD
+preplace inst fsm_0 -pg 1 -lvl 3 -x 540 -y 400 -defaultsOSRD
+preplace inst bcd_counter_0 -pg 1 -lvl 2 -x 290 -y 370 -defaultsOSRD
+preplace inst image_source_0 -pg 1 -lvl 4 -x 830 -y 60 -defaultsOSRD
+preplace inst nums_source_0 -pg 1 -lvl 4 -x 830 -y 290 -defaultsOSRD
+preplace inst video_source_0 -pg 1 -lvl 4 -x 830 -y 170 -defaultsOSRD
+preplace inst game_of_life_source_0 -pg 1 -lvl 4 -x 830 -y 470 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 380 -defaultsOSRD
+preplace netloc display_0_ROW 1 6 1 1490J 200n
+preplace netloc display_0_COL 1 6 1 NJ 230
+preplace netloc clk_wiz_0_clk_out1 1 1 5 200 300 380 300 700 360 960 210 N
+preplace netloc clk_in1_0_1 1 0 1 NJ 280
+preplace netloc cells_0_Q 1 5 1 1250 230n
+preplace netloc fsm_0_SEL 1 3 2 N 370 NJ
+preplace netloc fsm_0_INVERT 1 3 2 N 390 NJ
+preplace netloc bcd_counter_0_Q 1 2 2 390 310 710
+preplace netloc image_source_0_Q 1 4 1 970 60n
+preplace netloc nums_source_0_Q 1 4 1 N 290
+preplace netloc video_source_0_Q 1 4 1 950 170n
+preplace netloc fsm_0_EN_VIDEO 1 3 1 690 180n
+preplace netloc game_of_life_source_0_Q 1 4 1 970 350n
+preplace netloc fsm_0_EN_GAME_OF_LIFE 1 3 1 690 430n
+preplace netloc xlconstant_0_dout 1 1 1 NJ 380
+levelinfo -pg 1 0 110 290 540 830 1110 1370 1510
+pagesize -pg 1 -db -bbox -sgen -90 0 1610 550
+"
+}
+{
+   "da_board_cnt":"1"
+}
